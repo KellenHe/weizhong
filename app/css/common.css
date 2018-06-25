@@ -1,0 +1,68 @@
+html,
+body,
+.box {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box .line1 {
+  height: 90px;
+}
+
+.box .line2 {
+  flex: 1;
+}
+
+.box .line3 {
+  height: 220px;
+}
+
+.flex-box {
+  display: flex;
+  height: 100%;
+}
+
+.item {
+  height: 100%;
+  padding: 4px;
+}
+
+.item-25 {
+  flex-basis: 25%;
+  max-width: 25%;;
+}
+
+.item-50 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.rect {
+  background-color: #060b39;
+  border: 1px solid #3576dc;
+  height: calc(100% - 8px);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.font-color {
+  color: #78b7ff;
+}
