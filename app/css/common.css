@@ -67,11 +67,23 @@ body {
   color: #78b7ff;
 }
 
+.arc polyline {
+  stroke-width: 2px;
+  stroke: #78b7ff;
+  fill: none;
+}
+
 .arc text {
-  font: 10px sans-serif;
-  text-anchor: middle;
+  font-size: 12px;
+  fill: #78b7ff;
 }
 
 .arc path {
   stroke: #fff;
+}
+
+.map path {
+  stroke: #154baa;
+  stroke-width: .5;
+  fill: none;
 }
