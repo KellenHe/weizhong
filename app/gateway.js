@@ -1,5 +1,3 @@
-import * as d3 from 'd3';
-
 class GateWay {
 
   constructor() { }
@@ -34,6 +32,14 @@ class GateWay {
 
       arc.append("path")
         .attr("fill", function (d) { return color(d.data.age); })
+        .on('mouseenter', function(d) {
+          var current = d3.select(this);
+          current.attr("fill", "red");
+        })
+        .on('mouseleave', function(d) {
+          var current = d3.select(this);
+          current.attr("fill", function (d) { return color(d.data.age); });
+        })
         .transition().duration(1000)
         .attrTween("d", function(d) {
           this._current = this._current || d;

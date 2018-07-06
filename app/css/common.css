@@ -49,6 +49,7 @@ body {
   background-color: #060b39;
   border: 1px solid #3576dc;
   height: calc(100% - 8px);
+  position: relative;
 }
 
 .center {
@@ -82,8 +83,19 @@ body {
   stroke: #fff;
 }
 
-.map path {
+.map-path {
   stroke: #154baa;
-  stroke-width: .5;
-  fill: none;
+  fill: transparent;
+}
+
+#tooltip {
+  position: absolute;
+  width: 65px;
+  height: 90px;
+  opacity: 0;
+  background-color: #143484;
+  border: 1px solid #2253c6;
+  text-align: center;
+  color: #78b7ff;
+  pointer-events: none;
 }
